@@ -4,36 +4,38 @@
 		<title>EstateAgency</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
-
+		<link rel="icon" href="https://bootstrapmade.com/assets/img/favicon.png" type="">
 		<link rel="stylesheet" href="css/style.css">	
 		<link rel="stylesheet" href="bi/bi.css">
-		<link rel="stylesheet" href="boxicons/boxicons.css">
+		<link rel="stylesheet" href="boxicons/css/boxicons.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="owl/owl.carousel.min.css">
 		<link rel="stylesheet" href="owl/owl.theme.default.min.css">
 	</head>
 	<body>
 		<header>
-			<div class="menu-list">
-				<a href=""><i class="fas fa-list"></i></a>
-			</div>
-			<div class="logo">
-			<a href="#">Estate
-				<span style="color:#2eca6a;">Agency</span>
-			</a>
-			</div>
-			<div>
-				<nav>
-					<a href="#homes">Home</a>
-					<a href="about.html">About</a>
-					<a href="#property">Property</a>
-					<a href="#agents">Blog</a>
-					<a href="#latest">Pages</a>
-					<a href="">Contact</a>
-				</nav>
-			</div>
-			<div class="logo-search">
-				<i class="bi bi-search "></i>
+			<div class="navi-header">
+				<div class="menu-list" onclick="menuList()">
+					<i class="fas fa-list" ></i>
+				</div>
+				<div class="logo">
+				<a href="#">Estate
+					<span style="color:#2eca6a;">Agency</span>
+				</a>
+				</div>
+				<div id='navi-dis' class="navi-visible">
+					<nav>
+						<a href="#" onclick="menuClose()">Home</a>
+						<a href="#agents" onclick="menuClose()">About</a>
+						<a href="#property" onclick="menuClose()">Property</a>
+						<a href="#latest" onclick="menuClose()">Blog</a>
+						<a href="#" onclick="menuClose()">Pages</a>
+						<a href="#test" onclick="menuClose()">Contact</a>
+					</nav>
+				</div>
+				<div class="logo-search">
+					<i class="bi bi-search "></i>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -397,7 +399,7 @@
 					</div>
 				</section>
 				
-				<section>
+				<section id="test">
 					<div class="testimonial-container"> 
 						<div class="testimonial-head">
 							<h1>Testimonials</h1>

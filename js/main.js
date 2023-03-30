@@ -59,8 +59,27 @@ $('.testimonial-row').owlCarousel({
 		0:{
             items:1
         },
-	
-		
     }
 });
 
+var navi=document.querySelector(".navi-visible");
+console.log(navi);
+function menuList(){
+    let navi_none=navi.getAttribute("class");
+    if(navi_none !="navi-none"){
+        console.log(navi_none);        
+        navi.setAttribute("class","navi-none");
+
+    }
+    else{
+        console.log(navi_none);
+        navi.setAttribute("class","navi-visible");
+
+    
+    }
+    
+}
+function menuClose(){
+    navi.setAttribute("class","navi-visible");
+
+}
